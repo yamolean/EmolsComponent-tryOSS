@@ -14,8 +14,15 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initEmolLabel()
+    }
+    
+    private func initEmolLabel() {
         label.emolClipsToBounds()
         label.emolLabel()
+        label.emolText()
+        label.emolTextColor()
+        label.emolBackGroundColor()
     }
 }
 
