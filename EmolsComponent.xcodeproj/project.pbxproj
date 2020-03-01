@@ -15,7 +15,33 @@
 		185E2B69240BD2CF00ECE0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185E2B68240BD2CF00ECE0C0 /* Assets.xcassets */; };
 		185E2B6C240BD2CF00ECE0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E2B6A240BD2CF00ECE0C0 /* LaunchScreen.storyboard */; };
 		185E2B72240BD37E00ECE0C0 /* EmolsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E2B71240BD37E00ECE0C0 /* EmolsComponent.swift */; };
+		185E2B74240BDE6300ECE0C0 /* EmolsComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185E2B4E240BD16700ECE0C0 /* EmolsComponent.framework */; };
+		185E2B75240BDE6300ECE0C0 /* EmolsComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 185E2B4E240BD16700ECE0C0 /* EmolsComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185E2B76240BDE6300ECE0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185E2B45240BD16700ECE0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185E2B4D240BD16700ECE0C0;
+			remoteInfo = EmolsComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		185E2B78240BDE6300ECE0C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				185E2B75240BDE6300ECE0C0 /* EmolsComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		185E2B4E240BD16700ECE0C0 /* EmolsComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmolsComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185E2B74240BDE6300ECE0C0 /* EmolsComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +83,7 @@
 				185E2B50240BD16700ECE0C0 /* EmolsComponent */,
 				185E2B5E240BD2CE00ECE0C0 /* Demo */,
 				185E2B4F240BD16700ECE0C0 /* Products */,
+				185E2B73240BDE6200ECE0C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +118,13 @@
 				185E2B6D240BD2CF00ECE0C0 /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		185E2B73240BDE6200ECE0C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +166,12 @@
 				185E2B59240BD2CE00ECE0C0 /* Sources */,
 				185E2B5A240BD2CE00ECE0C0 /* Frameworks */,
 				185E2B5B240BD2CE00ECE0C0 /* Resources */,
+				185E2B78240BDE6300ECE0C0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				185E2B77240BDE6300ECE0C0 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -219,6 +256,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185E2B77240BDE6300ECE0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185E2B4D240BD16700ECE0C0 /* EmolsComponent */;
+			targetProxy = 185E2B76240BDE6300ECE0C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		185E2B65240BD2CE00ECE0C0 /* Main.storyboard */ = {

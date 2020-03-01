@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3523ef844950ecdfaafac1a9d2125906fb35c2b6",
+  "iOS" : [
+    {
+      "name" : "EmolsComponent",
+      "hash" : "d23f5113916ea2ff5ce0ddbb99504a1b42e864334f562730ec9e9e7c4483ef74",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module EmolsComponent {
+  umbrella header "EmolsComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module EmolsComponent.Swift {
+    header "EmolsComponent-Swift.h"
+    requires objc
+}
