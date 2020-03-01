@@ -9,8 +9,11 @@
 import UIKit
 
 public extension UILabel {
-    func emolLabel() {
+    func emolClipsToBounds() {
         clipsToBounds = true
+    }
+    
+    func emolLabel() {
         layer.cornerRadius = frame.height / 2
     }
 }
