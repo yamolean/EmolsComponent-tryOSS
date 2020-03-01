@@ -14,6 +14,7 @@
 		185E2B67240BD2CE00ECE0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E2B65240BD2CE00ECE0C0 /* Main.storyboard */; };
 		185E2B69240BD2CF00ECE0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185E2B68240BD2CF00ECE0C0 /* Assets.xcassets */; };
 		185E2B6C240BD2CF00ECE0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E2B6A240BD2CF00ECE0C0 /* LaunchScreen.storyboard */; };
+		185E2B72240BD37E00ECE0C0 /* EmolsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E2B71240BD37E00ECE0C0 /* EmolsComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		185E2B68240BD2CF00ECE0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185E2B6B240BD2CF00ECE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185E2B6D240BD2CF00ECE0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185E2B71240BD37E00ECE0C0 /* EmolsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmolsComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				185E2B51240BD16700ECE0C0 /* EmolsComponent.h */,
+				185E2B71240BD37E00ECE0C0 /* EmolsComponent.swift */,
 				185E2B52240BD16700ECE0C0 /* Info.plist */,
 			);
 			path = EmolsComponent;
@@ -150,6 +153,7 @@
 				TargetAttributes = {
 					185E2B4D240BD16700ECE0C0 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					185E2B5C240BD2CE00ECE0C0 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -200,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185E2B72240BD37E00ECE0C0 /* EmolsComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 		185E2B57240BD16700ECE0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yamolean.EmolsComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		185E2B58240BD16700ECE0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
